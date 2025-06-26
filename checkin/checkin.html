@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check-in Tiket</title>
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="loginForm">
+        <h2>Login Staf</h2>
+        <input type="password" id="checkinPass" placeholder="Masukkan password" />
+        <button onclick="checkinLogin()">Login</button>
+      </div>
+
+      <div id="checkinPanel" style="display: none">
+        <h2>Form Check-in</h2>
+        <input type="text" id="ticketID" placeholder="Masukkan ID Tiket" />
+        <button onclick="checkTicket()">Check-in</button>
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script src="../assets/js/checkin.js"></script>
+  </body>
+</html>
