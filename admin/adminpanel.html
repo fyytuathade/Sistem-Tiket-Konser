@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - Tiket Konser</title>
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+  </head>
+  <body>
+    <!-- Formulir Login -->
+    <div class="container">
+      <h2>Login Admin</h2>
+      <input type="password" id="adminPass" placeholder="Masukkan password admin" />
+      <button onclick="adminLogin()">Login</button>
+      <!-- Formulir Login End -->
+
+      <!-- Admin Panel -->
+      <div id="adminPanel" style="display: none">
+        <h3>Daftar Pemesan Tiket</h3>
+        <table id="ticketTable"></table>
+      </div>
+    </div>
+    <!-- Admin Panel End -->
+
+    <script src="../assets/js/admin.js"></script>
+  </body>
+</html>
