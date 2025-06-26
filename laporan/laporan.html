@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laporan Check-in</title>
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="loginForm">
+        <h2>Login Staf</h2>
+        <input type="password" id="reportPass" placeholder="Masukkan password" />
+        <button onclick="reportLogin()">Login</button>
+      </div>
+
+      <div id="reportPanel" style="display: none">
+        <h2>Laporan Kehadiran</h2>
+        <button onclick="showAll()">Semua</button>
+        <button onclick="showCheckedIn(true)">Sudah Check-in</button>
+        <button onclick="showCheckedIn(false)">Belum Check-in</button>
+        <table id="reportTable"></table>
+      </div>
+    </div>
+
+    <script src="../assets/js/laporan.js"></script>
+  </body>
+</html>
